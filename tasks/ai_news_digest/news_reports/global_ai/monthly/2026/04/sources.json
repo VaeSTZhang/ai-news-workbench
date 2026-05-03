@@ -1,40 +1,40 @@
 [
   {
-    "title": "Meta Newsroom",
+    "title": "Meta 发布欧洲 AI 产业与政策观察",
     "url": "https://about.fb.com/news/2026/04/can-europe-seize-the-ai-moment/",
-    "publisher": "Meta Newsroom",
+    "publisher": "Meta 发布欧洲 AI 产业与政策观察",
     "published_date": "2026-04-07",
     "accessed_date": "2026-05-03",
     "reliability_note": "公开来源核对"
   },
   {
-    "title": "Anthropic Newsroom",
-    "url": "https://www.anthropic.com/news",
-    "publisher": "Anthropic Newsroom",
-    "published_date": "2026-04-17",
-    "accessed_date": "2026-05-03",
-    "reliability_note": "公开来源核对"
-  },
-  {
-    "title": "OpenAI Deployment Safety",
+    "title": "OpenAI 发布 ChatGPT Images 2.0 System Card",
     "url": "https://deploymentsafety.openai.com/chatgpt-images-2-0/chatgpt-images-2-0.pdf",
-    "publisher": "OpenAI Deployment Safety",
+    "publisher": "OpenAI 发布 ChatGPT Images 2.0 System Card",
     "published_date": "2026-04-21",
     "accessed_date": "2026-05-03",
     "reliability_note": "公开来源核对"
   },
   {
-    "title": "OpenAI Deployment Safety",
+    "title": "OpenAI 发布 GPT-5.5 System Card",
     "url": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf",
-    "publisher": "OpenAI Deployment Safety",
+    "publisher": "OpenAI 发布 GPT-5.5 System Card",
     "published_date": "2026-04-23",
     "accessed_date": "2026-05-03",
     "reliability_note": "公开来源核对"
   },
   {
-    "title": "Anthropic System Cards",
+    "title": "Anthropic 更新 System Cards 目录",
     "url": "https://www.anthropic.com/system-cards",
-    "publisher": "Anthropic System Cards",
+    "publisher": "Anthropic 更新 System Cards 目录",
+    "published_date": "2026-04",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对"
+  },
+  {
+    "title": "美国机密网络 AI 部署进展进入公开讨论",
+    "url": "https://apnews.com/article/060cecf836c4cebcf012a3ceb5333f2c",
+    "publisher": "美国机密网络 AI 部署进展进入公开讨论",
     "published_date": "2026-04",
     "accessed_date": "2026-05-03",
     "reliability_note": "公开来源核对"

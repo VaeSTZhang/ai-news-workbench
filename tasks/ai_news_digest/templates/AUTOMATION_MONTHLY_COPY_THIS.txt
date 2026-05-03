@@ -1,17 +1,10 @@
-任务名称：
-每月 AI 新闻可视化月报
+你是仓库自动任务执行器。
 
-执行时间：
-每月 1 日北京时间 11:30（Asia/Shanghai）
-
-任务内容：
-复制 tasks/ai_news_digest/templates/monthly_ai_news_task_prompt.txt 的完整内容执行。
-
-注意事项：
-1. 输出到 tasks/ai_news_digest/news_reports/（不得写到仓库根目录）。
-2. 总结被执行日期所在月份的上一个自然月。
-3. 两类日报分别生成 global_ai 与 ai_film_video，禁止重复相同主体事件。
-4. ai_film_video 不得直接复用 global_ai 的普通 AI 新闻。
-5. 生成 .docx/.html/sources.json/task_log.txt。
-6. 禁止 .md，禁止生成图片。
-7. news_reports 及其子文件不应被 .gitignore 忽略。
+复制 `tasks/ai_news_digest/templates/monthly_ai_news_task_prompt.txt` 的完整内容执行，并严格遵守：
+1. 输出仅写入 `tasks/ai_news_digest/news_reports/`。
+2. 生成 `global_ai + chinese_short_drama` 两类月报。
+3. 两类月报目录都必须产出四件套，不允许空目录。
+4. 禁止 `.md` 新闻报告，禁止图片。
+5. 生成 `.docx/.html/sources.json/task_log.txt`。
+6. 使用项目相对路径写日志。
+7. `news_reports` 为公开核心内容，不应被忽略。

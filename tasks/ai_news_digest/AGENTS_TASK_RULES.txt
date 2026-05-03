@@ -1,13 +1,11 @@
 AI 新闻任务局部规则（AI 新闻自动化专属）
 
-1. 本任务只能在 tasks/ai_news_digest/ 内创建和维护 AI 新闻相关文件。
-2. AI 新闻相关文件不得直接写入 codex_Project 根目录。
-3. 自动任务输出必须进入 tasks/ai_news_digest/news_reports/。
-4. 自动任务 prompt 必须放在 tasks/ai_news_digest/templates/。
-5. 日志必须写入 tasks/ai_news_digest/logs_txt/。
-6. 旧输出归档必须放入 tasks/ai_news_digest/archive_old_outputs/。
-7. 禁止生成 .md 文件。
-8. 禁止生成图片。
-9. 严格禁止访问项目外路径。
-10. 严格禁止访问 /Users/zhangtritsen/Desktop/Code/ManJuFlow。
-11. 严格禁止访问公司内部工程文件及 /Users/zhangtritsen/Desktop、/Users/zhangtritsen/Documents、/Users/zhangtritsen/Downloads、/Users/zhangtritsen/.ssh、/Users/zhangtritsen/.env、/Users/zhangtritsen/.config、/Users/zhangtritsen/.codex。
+1. 仅在 `tasks/ai_news_digest/` 内创建和维护任务文件。
+2. 自动任务输出必须进入 `tasks/ai_news_digest/news_reports/`。
+3. 自动任务 prompt 必须放在 `tasks/ai_news_digest/templates/`。
+4. 日志必须写入 `tasks/ai_news_digest/logs_txt/`。
+5. 旧输出归档必须放入 `tasks/ai_news_digest/archive_old_outputs/`。
+6. 禁止生成 `.md` 新闻报告。
+7. 禁止生成图片。
+8. 严禁访问项目目录外路径。
+9. 公开文件中禁止出现本机绝对路径、用户名或设备目录信息。

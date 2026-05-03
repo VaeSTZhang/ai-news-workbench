@@ -1,50 +1,50 @@
 [
   {
-    "title": "AP 报道",
+    "title": "AP",
     "url": "https://apnews.com/article/060cecf836c4cebcf012a3ceb5333f2c",
     "publisher": "AP",
     "published_date": "2026-05-01",
     "accessed_date": "2026-05-03",
-    "reliability_note": "已基于公开页面核对；延续观察条目标注说明"
+    "reliability_note": "公开来源核对；部分为延续观察"
   },
   {
-    "title": "TechCrunch 报道",
+    "title": "TechCrunch",
     "url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
     "publisher": "TechCrunch",
     "published_date": "2026-05-01",
     "accessed_date": "2026-05-03",
-    "reliability_note": "已基于公开页面核对；延续观察条目标注说明"
+    "reliability_note": "公开来源核对；部分为延续观察"
   },
   {
-    "title": "OpenAI 部署安全文档",
+    "title": "OpenAI Deployment Safety",
     "url": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf",
-    "publisher": "OpenAI",
+    "publisher": "OpenAI Deployment Safety",
     "published_date": "2026-04-23",
     "accessed_date": "2026-05-03",
-    "reliability_note": "已基于公开页面核对；延续观察条目标注说明"
+    "reliability_note": "公开来源核对；部分为延续观察"
   },
   {
-    "title": "OpenAI 部署安全文档",
+    "title": "OpenAI Deployment Safety",
     "url": "https://deploymentsafety.openai.com/chatgpt-images-2-0/chatgpt-images-2-0.pdf",
-    "publisher": "OpenAI",
+    "publisher": "OpenAI Deployment Safety",
     "published_date": "2026-04-21",
     "accessed_date": "2026-05-03",
-    "reliability_note": "已基于公开页面核对；延续观察条目标注说明"
+    "reliability_note": "公开来源核对；部分为延续观察"
   },
   {
     "title": "Anthropic System Cards",
     "url": "https://www.anthropic.com/system-cards",
-    "publisher": "Anthropic",
+    "publisher": "Anthropic System Cards",
     "published_date": "2026-04",
     "accessed_date": "2026-05-03",
-    "reliability_note": "已基于公开页面核对；延续观察条目标注说明"
+    "reliability_note": "公开来源核对；部分为延续观察"
   },
   {
     "title": "Meta Newsroom",
     "url": "https://about.fb.com/news/2026/04/can-europe-seize-the-ai-moment/",
-    "publisher": "Meta",
+    "publisher": "Meta Newsroom",
     "published_date": "2026-04-07",
     "accessed_date": "2026-05-03",
-    "reliability_note": "已基于公开页面核对；延续观察条目标注说明"
+    "reliability_note": "公开来源核对；部分为延续观察"
   }
 ]

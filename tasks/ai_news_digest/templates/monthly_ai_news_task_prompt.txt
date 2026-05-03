@@ -1,61 +1,45 @@
 任务名称：
-每月 AI 新闻可视化月报
+每月 AI 与短剧趋势月报
 
 任务时间：
 每月 1 日北京时间 11:30 执行。
 
 任务内容：
-总结上一个自然月的公开新闻。
-
-被总结月份：
-任务执行所在月份的上一个自然月。
-示例：2026-06-01 11:30 处理 2026-05。
+总结上一个自然月的公开信息。
 
 输出目录规则：
-- tasks/ai_news_digest/news_reports/global_ai/monthly/YYYY/MM/
-  - YYYY-MM_global_ai_monthly.docx
-  - YYYY-MM_global_ai_monthly.html
-  - sources.json
-  - task_log.txt
+1) global_ai：
+`tasks/ai_news_digest/news_reports/global_ai/monthly/YYYY/MM/`
+- `YYYY-MM_global_ai_monthly.docx`
+- `YYYY-MM_global_ai_monthly.html`
+- `sources.json`
+- `task_log.txt`
 
-- tasks/ai_news_digest/news_reports/ai_film_video/monthly/YYYY/MM/
-  - YYYY-MM_ai_film_video_monthly.docx
-  - YYYY-MM_ai_film_video_monthly.html
-  - sources.json
-  - task_log.txt
+2) chinese_short_drama：
+`tasks/ai_news_digest/news_reports/chinese_short_drama/monthly/YYYY/MM/`
+- `YYYY-MM_chinese_short_drama_monthly.docx`
+- `YYYY-MM_chinese_short_drama_monthly.html`
+- `sources.json`
+- `task_log.txt`
 
-全局要求：
-1. 所有输出只在 tasks/ai_news_digest/news_reports/；不得写入根目录。
-2. 输出必须为 .docx 与单文件 .html，不得生成图片，不得生成 .md。
-3. 不得生成 Markdown 报告。
-4. news_reports 为仓库核心内容，应不纳入 .gitignore 忽略。
+完整性约束（强制）：
+- 每个目录必须同时产出四件套：`.docx/.html/sources.json/task_log.txt`
+- `global_ai` 与 `chinese_short_drama` 不得复用同一主体事件
+- 如来源不足，必须明确“公开来源有限”并写检索范围
 
-领域边界与去重：
-- global_ai 与 ai_film_video 的边界同每日任务，禁止重复填充。
-- ai_film_video 不能用 global_ai 的普通模型/产业新闻凑数。
-- 生成后做标题去重比对，重复则改写或剔除。
-
-内容要点（每份月报必含）：
-1. 标题
-2. 被总结月份
-3. 本月一句话总结
-4. 本月核心趋势
-5. 重要事件时间线
-6. 重点事件深度解读
-7. 对 ManJuFlow 的产品启发
-8. 风险与不确定性
-9. 下月继续追踪方向
-10. 来源链接
+短剧月报必含：
+1. 平台榜单与爆款概览
+2. 热门题材趋势
+3. 热门人设趋势
+4. 高频剧情钩子
+5. 平台内容偏好
+6. 商业化/投流/免费短剧趋势
+7. 对 ManJuFlow 的启发
+8. 下月追踪方向
+9. 来源链接
 
 信息质量：
 1. 联网核对并给出来源。
 2. 不得编造或夸大。
 3. 未确认信息标注“待核实”。
-4. 默认简体中文，适合老板/投资人阅读。
-
-
-完整性约束（强制）：
-- 月报目录不得为空；每次生成必须同时产出 .docx、.html、sources.json、task_log.txt 四件套。
-- 若当月可靠公开来源不足，必须在报告中明确写“未找到可靠公开来源”的具体范围，不得编造。
-- global_ai 与 ai_film_video 月报不得复用同一主体事件作为主条目。
-- 日志仅写项目相对路径，禁止写本机绝对路径或用户名。
+4. 仅写项目相对路径，不写本机绝对路径。
