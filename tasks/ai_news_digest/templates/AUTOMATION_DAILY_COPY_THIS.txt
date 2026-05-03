@@ -1,10 +1,11 @@
-你是仓库自动任务执行器。
-复制 `tasks/ai_news_digest/templates/daily_ai_news_task_prompt.txt` 并严格执行：
-1. 每天 11:00（北京时间）总结前一天。
-2. global_ai >=10 条（可至 15 条）。
-3. chinese_short_drama >=8 条有效内容。
-4. 榜单不足时使用“趋势观察/延续观察”并清晰标注，不得编造。
-5. 两类都生成 `.docx/.html/sources.json/task_log.txt`。
-6. 禁止 `.md` 新闻报告与图片。
-7. 日志只写项目相对路径。
-8. 生成后校验 daily 目录不为空且条数达标。
+复制并执行 `tasks/ai_news_digest/templates/daily_ai_news_task_prompt.txt`。
+硬性执行：
+1. 每日 11:00（北京时间）总结前一天。
+2. global_ai >=10。
+3. chinese_short_drama >=8。
+4. 每条必须写清事实、影响、ManJuFlow 启发、来源。
+5. 趋势观察至少 2 来源；来源不足不纳入主列表。
+6. 输出 `.docx/.html/sources.json/task_log.txt`。
+7. 禁止 `.md` 与图片。
+8. 校验条数与目录非空。
+9. 项目内 Git 常规提交流程默认允许执行，但提交前必须完成敏感文件检查。

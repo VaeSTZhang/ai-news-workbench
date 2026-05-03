@@ -2,17 +2,15 @@ AI 新闻任务局部规则（AI 新闻自动化专属）
 
 1. 只在 `tasks/ai_news_digest/` 内维护任务文件。
 2. 输出必须进入 `tasks/ai_news_digest/news_reports/`。
-3. 模板必须放在 `tasks/ai_news_digest/templates/`。
-4. 日志写入 `tasks/ai_news_digest/logs_txt/`。
-5. 旧输出归档到 `tasks/ai_news_digest/archive_old_outputs/`。
-6. 禁止生成 `.md` 新闻报告。
-7. 禁止生成图片。
-8. 严禁访问项目外路径。
-9. 公开文档禁止本机绝对路径、用户名、设备目录信息。
+3. 禁止生成 `.md` 新闻报告。
+4. 禁止生成图片。
+5. 严禁访问项目目录外路径。
+6. 公开文档禁止本机绝对路径、用户名、设备目录。
 
-内容强约束：
-- global_ai daily：>=10 条（可到 15 条）
-- global_ai monthly：最重要 30 条
-- chinese_short_drama daily：>=8 条
-- chinese_short_drama monthly：20-30 条
-- 每条必须有来源；不得编造。
+质量硬约束：
+A) 单条写作：标题、发生了什么、为什么重要、ManJuFlow 启发、来源链接。
+B) 禁止空话：不得用无解释的模板化表述。
+C) 月报去重：global_ai 30 条互不重复；chinese_short_drama 20-30 条互不重复。
+D) sources.json 字段必须完整：id/category/title/url/publisher/published_date/accessed_date/used_in_section/reliability_note。
+E) 日报数量：global_ai>=10；chinese_short_drama>=8。
+F) Git 常规提交命令在项目内默认允许，但仍需做敏感文件检查。
