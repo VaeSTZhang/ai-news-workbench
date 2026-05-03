@@ -1,18 +1,34 @@
 [
   {
-    "title": "AI-generated actors and scripts are now ineligible for Oscars",
-    "url": "https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/",
-    "publisher": "TechCrunch",
-    "published_date": "2026-05-02 14:54 PDT",
+    "title": "Academy 官方公告",
+    "url": "https://press.oscars.org/news/awards-rules-and-campaign-promotional-regulations-approved-99th-oscarsr",
+    "publisher": "Academy",
+    "published_date": "2026-05-02",
     "accessed_date": "2026-05-03",
-    "reliability_note": "官方声明/主流媒体交叉验证"
+    "reliability_note": "已基于公开页面核对；延续观察条目标注说明"
   },
   {
-    "title": "Awards Rules and Campaign Promotional Regulations Approved for 99th Oscars®",
-    "url": "https://press.oscars.org/news/awards-rules-and-campaign-promotional-regulations-approved-99th-oscarsr",
-    "publisher": "Academy Press Office",
-    "published_date": "2026-05-02 14:54 PDT",
+    "title": "TechCrunch 报道",
+    "url": "https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/",
+    "publisher": "TechCrunch",
+    "published_date": "2026-05-02",
     "accessed_date": "2026-05-03",
-    "reliability_note": "官方声明/主流媒体交叉验证"
+    "reliability_note": "已基于公开页面核对；延续观察条目标注说明"
+  },
+  {
+    "title": "OpenAI Help Center",
+    "url": "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation?iframe=yes",
+    "publisher": "OpenAI",
+    "published_date": "2026-04-26",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "已基于公开页面核对；延续观察条目标注说明"
+  },
+  {
+    "title": "Runway Changelog",
+    "url": "https://runwayml.com/changelog",
+    "publisher": "Runway",
+    "published_date": "2026-04-07",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "已基于公开页面核对；延续观察条目标注说明"
   }
 ]

@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Runway Changelog",
+    "url": "https://runwayml.com/changelog",
+    "publisher": "Runway Changelog",
+    "published_date": "2026-04-07",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对"
+  },
+  {
+    "title": "Anthropic Newsroom",
+    "url": "https://www.anthropic.com/news",
+    "publisher": "Anthropic Newsroom",
+    "published_date": "2026-04-17",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对"
+  },
+  {
+    "title": "OpenAI Help Center",
+    "url": "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation?iframe=yes",
+    "publisher": "OpenAI Help Center",
+    "published_date": "2026-04-26",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对"
+  },
+  {
+    "title": "OpenAI 安全说明",
+    "url": "https://openai.com/es-419/index/creating-with-sora-safely/",
+    "publisher": "OpenAI 安全说明",
+    "published_date": "2026-04",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对"
+  }
+]

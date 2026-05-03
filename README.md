@@ -45,11 +45,9 @@
 
 ## 安全边界
 
-- 仅在 `/Users/zhangtritsen/Desktop/Code/codex_Project` 内操作。
-- 禁止访问：
-  - `/Users/zhangtritsen/Desktop`、`Documents`、`Downloads`
-  - `/Users/zhangtritsen/.ssh`、`/.env`、`/.config`、`/.codex`
-  - 公司内部工程文件、ManJuFlow
+- 仅在项目根目录及其子目录内操作。
+- 禁止访问项目外路径、公司内部工程文件及未授权本地目录。
+- 禁止读取或提交密钥、令牌、账号密码、SSH key、环境变量与本机配置。
 
 ## 公开仓库提交原则
 

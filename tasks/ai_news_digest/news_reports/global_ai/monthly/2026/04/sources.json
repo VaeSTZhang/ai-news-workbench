@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Meta Newsroom",
+    "url": "https://about.fb.com/news/2026/04/can-europe-seize-the-ai-moment/",
+    "publisher": "Meta Newsroom",
+    "published_date": "2026-04-07",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对"
+  },
+  {
+    "title": "Anthropic Newsroom",
+    "url": "https://www.anthropic.com/news",
+    "publisher": "Anthropic Newsroom",
+    "published_date": "2026-04-17",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对"
+  },
+  {
+    "title": "OpenAI Deployment Safety",
+    "url": "https://deploymentsafety.openai.com/chatgpt-images-2-0/chatgpt-images-2-0.pdf",
+    "publisher": "OpenAI Deployment Safety",
+    "published_date": "2026-04-21",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对"
+  },
+  {
+    "title": "OpenAI Deployment Safety",
+    "url": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf",
+    "publisher": "OpenAI Deployment Safety",
+    "published_date": "2026-04-23",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对"
+  },
+  {
+    "title": "Anthropic System Cards",
+    "url": "https://www.anthropic.com/system-cards",
+    "publisher": "Anthropic System Cards",
+    "published_date": "2026-04",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对"
+  }
+]
