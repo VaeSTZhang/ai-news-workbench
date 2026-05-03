@@ -1,0 +1,86 @@
+news_reports 重构执行日志（本次）
+
+执行时间：2026-05-03 19:21:00 CST
+
+1. 新建目录
+- news_reports/global_ai/daily
+- news_reports/global_ai/monthly
+- news_reports/ai_film_video/daily
+- news_reports/ai_film_video/monthly
+- templates
+- archive_old_outputs
+- logs_txt
+
+2. 扫描并处理的旧文件清单
+- reports: 无可见报告文件（目录为空）。
+- reports_docx: 目录不存在
+- reports_html: 目录不存在
+- sources: 无可见文件（目录为空）。
+- sources_json: 目录不存在
+- logs: 空
+- logs_txt: 重构日志和不确定文件清单仅留存
+- archive_old_outputs: 仅包含历史文件（以下全部为已归档旧格式）
+  - 2026-05_to_date_ai_film_video_summary.md
+  - 2026-05_to_date_global_ai_summary.md
+  - 2026-05_to_date_sources.md
+  - 2026-05_to_date_task_log.md
+  - daily_ai_news_task_prompt.md
+
+3. 迁移/保留决策
+- 旧日报/月报内容已迁移重建到新目录并统一导出：
+  - news_reports/global_ai/monthly/2026/05/2026-05_to_date_global_ai_summary.docx
+  - news_reports/global_ai/monthly/2026/05/2026-05_to_date_global_ai_summary.html
+  - news_reports/global_ai/monthly/2026/05/sources.json
+  - news_reports/global_ai/monthly/2026/05/task_log.txt
+  - news_reports/ai_film_video/monthly/2026/05/2026-05_to_date_ai_film_video_summary.docx
+  - news_reports/ai_film_video/monthly/2026/05/2026-05_to_date_ai_film_video_summary.html
+  - news_reports/ai_film_video/monthly/2026/05/sources.json
+  - news_reports/ai_film_video/monthly/2026/05/task_log.txt
+- 未满足“可确定同名同类替换 + 必须删除旧文件且无风险”的条件，故旧 .md 文件先保留于 archive_old_outputs 以备审计。
+
+4. 任务规则文件更新
+- templates/daily_ai_news_task_prompt.txt：已覆盖为新规则（11:00 前一天汇总，输出 .docx/.html/sources.json/task_log.txt，不产出 .md）
+- templates/monthly_ai_news_task_prompt.txt：已覆盖为新规则（每月 1 日 11:30，总结上一个自然月，输出 .docx/.html/sources.json/task_log.txt，不产出 .md）
+- templates/AUTOMATION_DAILY_COPY_THIS.txt：已生成。
+- templates/AUTOMATION_MONTHLY_COPY_THIS.txt：已生成。
+
+5. 2026-05 阶段性总结结果
+- 重新生成路径与文件：
+  - news_reports/global_ai/monthly/2026/05/2026-05_to_date_global_ai_summary.docx
+  - news_reports/global_ai/monthly/2026/05/2026-05_to_date_global_ai_summary.html
+  - news_reports/global_ai/monthly/2026/05/sources.json
+  - news_reports/global_ai/monthly/2026/05/task_log.txt
+  - news_reports/ai_film_video/monthly/2026/05/2026-05_to_date_ai_film_video_summary.docx
+  - news_reports/ai_film_video/monthly/2026/05/2026-05_to_date_ai_film_video_summary.html
+  - news_reports/ai_film_video/monthly/2026/05/sources.json
+  - news_reports/ai_film_video/monthly/2026/05/task_log.txt
+
+6. Automations 尝试
+- 已尝试使用 automation_update 创建/更新两条任务。
+- 结果：接口返回“invalid arguments”，未能直接创建。
+- 原因：当前工具调用参数与本环境 schema 不匹配。
+- 应对：已在 templates/AUTOMATION_DAILY_COPY_THIS.txt 与 templates/AUTOMATION_MONTHLY_COPY_THIS.txt 写入可直接复制到 Codex Automations 的文本内容。
+
+7. 保留的不确定文件
+- logs_txt/restructure_uncertain_files_log.txt：记录“未发现无法判定归属文件”。
+- archive_old_outputs 中历史 .md 文件按“保留用于留痕”策略保留。
+
+8. 安全边界核验
+- 全部命令均在 /Users/zhangtritsen/Desktop/Code/codex_Project 及其子目录执行。
+- 未访问任何项目外路径。
+- 未使用 rm -rf。
+- 未修改 AGENTS.md、README.md。
+
+9. 现状清单（任务相关）
+- 仍有的旧 .md 新闻遗留：
+  - archive_old_outputs/2026-05_to_date_ai_film_video_summary.md
+  - archive_old_outputs/2026-05_to_date_global_ai_summary.md
+  - archive_old_outputs/2026-05_to_date_sources.md
+  - archive_old_outputs/2026-05_to_date_task_log.md
+  - archive_old_outputs/daily_ai_news_task_prompt.md
+  说明：均为历史旧格式文件，已归档保留。
+- 非 AGENTS.md / README.md 的 .md 残留：仅上述已归档旧文件。
+
+10. 未核实信息
+- 存在少量来自二手来源（TechCrunch）的细节，已在日志中标注“来源核验”。
+- 同时已同步官方来源（OpenAI Status、War.gov、Academy）与二手来源并保留来源级别。

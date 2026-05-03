@@ -1,0 +1,44 @@
+# 通用临时与系统文件
+.DS_Store
+*.tmp
+*.log
+
+# 环境与密钥
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.sqlite
+*.db
+
+# Python
+__pycache__/
+*.pyc
+
+# Node/前端
+node_modules/
+.venv/
+venv/
+.cache/
+
+# 编辑器临时文件
+*.bak
+*.swp
+
+# Codex 与敏感配置
+.codex/
+
+# 旧产物归档（如无价值长期保留项）
+archive_old_outputs/
+archive_old_md/
+
+# 旧项目根下的旧归档（本仓库使用 tasks/ai_news_digest 结构）
+/tasks/ai_news_digest/archive_old_outputs/
+
+# 其他项目内文件
+.DS_Store

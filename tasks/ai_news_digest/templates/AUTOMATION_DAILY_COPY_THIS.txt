@@ -1,0 +1,22 @@
+请在 Codex Automations 中创建/更新一条每日任务，内容如下：
+
+任务名称：
+每日 AI 新闻可视化速览
+
+执行时间：
+每天 11:00（北京时间 Asia/Shanghai）
+
+任务提示词：
+[复制 tasks/ai_news_digest/templates/daily_ai_news_task_prompt.txt 全文]
+
+说明：
+1. 每天总结前一天新闻。
+2. 输出两类日报：
+   - 全球 AI 热点新闻日报
+   - AI 影视化 / AI 视频 / AI 短剧 / AI 电影方向日报
+3. 输出到：
+   tasks/ai_news_digest/news_reports/global_ai/daily/YYYY-MM/YYYY-MM-DD/
+   tasks/ai_news_digest/news_reports/ai_film_video/daily/YYYY-MM/YYYY-MM-DD/
+4. 输出文件：
+docx + html + sources.json + task_log.txt。
+5. 禁止生成 .md 和图片。

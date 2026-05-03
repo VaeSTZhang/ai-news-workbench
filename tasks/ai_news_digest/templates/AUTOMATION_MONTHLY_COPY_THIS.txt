@@ -1,0 +1,22 @@
+请在 Codex Automations 中创建/更新一条每月任务，内容如下：
+
+任务名称：
+每月 AI 新闻可视化月报
+
+执行时间：
+每月 1 日 11:30（北京时间 Asia/Shanghai）
+
+任务提示词：
+[复制 tasks/ai_news_digest/templates/monthly_ai_news_task_prompt.txt 全文]
+
+说明：
+1. 总结上一个自然月公开新闻。
+2. 输出两类月报：
+   - 全球 AI 热点新闻月报
+   - AI 影视化 / AI 视频 / AI 短剧 / AI 电影方向月报
+3. 输出到：
+   tasks/ai_news_digest/news_reports/global_ai/monthly/YYYY/MM/
+   tasks/ai_news_digest/news_reports/ai_film_video/monthly/YYYY/MM/
+4. 输出文件：
+docx + html + sources.json + task_log.txt。
+5. 禁止生成 .md 和图片。

@@ -1,0 +1,81 @@
+任务名称：
+每月 AI 新闻可视化月报
+
+任务时间：
+每月 1 日北京时间 11:30 执行。
+
+任务内容：
+总结上一个自然月的公开新闻。
+
+项目根目录：
+/Users/zhangtritsen/Desktop/Code/codex_Project
+
+AI 新闻任务根目录：
+/Users/zhangtritsen/Desktop/Code/codex_Project/tasks/ai_news_digest
+
+被总结月份：
+任务执行所在月份的上一个自然月。
+示例：任务在 2026-06-01 11:30 执行，则总结 2026-05-01 至 2026-05-31。
+
+输出要求：
+1. 月报主输出必须为可直接打开的 .docx。
+2. 同时输出单文件可读的 .html 可视化速览页。
+3. 来源留档使用 sources.json。
+4. 执行日志使用 task_log.txt。
+5. 禁止生成 .md 文件。
+6. 禁止生成图片。
+7. 文件必须位于 tasks/ai_news_digest 内。
+8. 输出目录均为该任务目录：
+   tasks/ai_news_digest/news_reports/
+
+每月需要生成两类月报：
+
+第一类：
+全球 AI 热点新闻月报
+
+输出目录：
+tasks/ai_news_digest/news_reports/global_ai/monthly/YYYY/MM/
+
+输出文件：
+YYYY-MM_global_ai_monthly.docx
+YYYY-MM_global_ai_monthly.html
+sources.json
+task_log.txt
+
+第二类：
+AI 影视化 / AI 视频 / AI 短剧 / AI 电影方向月报
+
+输出目录：
+tasks/ai_news_digest/news_reports/ai_film_video/monthly/YYYY/MM/
+
+输出文件：
+YYYY-MM_ai_film_video_monthly.docx
+YYYY-MM_ai_film_video_monthly.html
+sources.json
+task_log.txt
+
+说明：
+1. YYYY-MM 使用被总结月份，不是任务执行月份。
+2. 输出必须区分年份/月份目录。
+3. 两类月报分别落入各自大类目录。
+
+每份月报内容最少包含：
+1. 标题
+2. 被总结月份
+3. 本月一句话总结
+4. 本月核心趋势
+5. 重要事件时间线
+6. 重点事件深度解读
+7. 对 ManJuFlow 的产品启发
+8. 风险与不确定性
+9. 下月继续追踪方向
+10. 来源链接
+
+信息质量：
+1. 必须联网核对并给出可验证来源链接。
+2. 不得编造新闻、数据、引用。
+3. 未经确认的信息必须标注“待核实”。
+4. 不能把传闻当确定事实。
+5. 若来源冲突需说明采信依据。
+6. 默认使用简体中文。
+7. 适配老板/投资人/合作方阅读。
