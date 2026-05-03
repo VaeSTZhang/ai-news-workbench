@@ -8,11 +8,11 @@ AI News Digest task rules (local scope)
 6. Do not include machine-identifying local path data in public artifacts.
 
 Hard quality rules:
-A) Every item must include title / what happened / why important / ManJuFlow implications / sources.
-B) No vague filler language without concrete impact.
-C) Monthly de-dup is mandatory; same core event or same trend cannot be split as multiple items.
-D) `sources.json` fields required per record:
+A) Daily scope: previous day only. Monthly scope: previous natural month only.
+B) Daily main list cannot include methodology, collection strategy, rules, templates, or safety notes.
+C) If daily/news volume is insufficient, report lower count in task_log.txt; never backfill with old items.
+D) Monthly de-dup is mandatory; same core event/trend cannot be split into multiple padded entries.
+E) `sources.json` fields required per record:
    id, category, title, url, publisher, published_date, accessed_date, used_in_section, reliability_note.
-E) Daily minimum counts:
-   global_ai >=10, chinese_short_drama >=8.
-F) Run sensitive-content checks before commit.
+F) Every main-list item must have directly corresponding publicly accessible sources.
+G) Run sensitive-content checks before commit.

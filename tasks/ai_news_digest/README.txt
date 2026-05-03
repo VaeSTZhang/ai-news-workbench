@@ -10,22 +10,21 @@ AI News Digest workspace (task-local)
 - `sources.json`
 - `task_log.txt`
 
-3) Per-item writing standard
-Each item must include:
-1. Title (specific)
-2. What happened (2-4 sentences with actor/time/action/result)
-3. Why it matters (1-3 sentences with concrete workflow/cost/capability/business impact)
-4. Implications for ManJuFlow (1-3 concrete sentences)
-5. Source links (kept with the item)
+3) Daily vs Monthly boundary
+- Daily: only the previous day.
+- Monthly: only the previous natural month.
+- Do not mix daily and monthly scopes.
 
-4) Quality constraints
-- `global_ai` daily >= 10
-- `chinese_short_drama` daily >= 8
-- `global_ai` monthly = 30 non-duplicate key events
-- `chinese_short_drama` monthly = 20-30 non-duplicate observations
-- Monthly task log must record de-dup check, removed duplicates, and final count.
+4) Daily hard rules
+- Daily main list must contain only previous-day verifiable news.
+- No methodology/process/rules entries in daily main list.
+- If news is insufficient, allow fewer than target counts and explain in task_log.txt.
+- Never fill with old-month items.
 
-5) Source rules
-- No fake sources.
-- Broken, gated, or mismatched links cannot remain in main-list items.
-- If evidence is weak or inaccessible: `来源不足，未纳入主列表`.
+5) Monthly hard rules
+- De-dup is mandatory.
+- If verifiable items are insufficient, record the gap in task_log.txt instead of padding.
+
+6) Source rules
+- Every main-list item must have directly supporting, publicly accessible sources.
+- Source-insufficient items must stay out of main list and be logged in task_log.txt.

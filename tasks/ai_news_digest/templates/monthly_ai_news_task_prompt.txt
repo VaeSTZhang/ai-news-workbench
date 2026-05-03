@@ -1,6 +1,6 @@
-任务名称：每月 AI 与短剧趋势月报
+任务名称：每月 AI 与短剧趋势月报（严格上个月）
 执行时间：每月 1 日北京时间 11:30
-总结范围：上一个自然月
+总结范围：仅上一个自然月（例如 2026-05-01 任务仅总结 2026-04）
 
 输出目录：
 - global_ai：`tasks/ai_news_digest/news_reports/global_ai/monthly/YYYY/MM/`
@@ -8,29 +8,19 @@
 
 每类必须生成：`.docx` `.html` `sources.json` `task_log.txt`
 
-数量与去重：
-- global_ai：30 条互不重复的重要全球 AI 事件
-- chinese_short_drama：20-30 条互不重复的重要短剧观察
-- 同一事件只能计 1 条，后续并入该条
+月报规则：
+1. 仅总结上个月，禁止混入日报日期内容。
+2. global_ai 目标 30 条互不重复事件；chinese_short_drama 目标 20-30 条互不重复观察。
+3. 若可核验条目不足，允许少于目标并在 task_log.txt 说明，不得重复改写凑数。
+4. 同一公司同一产品同一事件只计 1 条。
 
 单条质量标准：
-- 标题、发生了什么、为什么重要、ManJuFlow 启发、来源链接
+- 标题、发生了什么（2-4句）、为什么重要、ManJuFlow 启发、来源链接。
 
 来源规则：
-- 每条必须有来源
-- 趋势观察至少 2 个来源
-- 来源不足写“来源不足，未纳入主列表”
+- 每条必须有可访问且直接对应的来源；来源不足条目不得纳入主列表。
 
 禁止事项：
 - 不生成 `.md` 新闻报告
 - 不生成图片
 - 不写本机绝对路径
-
-生成后检查：
-- monthly 目录不为空
-- global_ai=30
-- chinese_short_drama在20-30之间
-- task_log 记录去重检查结果
-
-Git 常规提交默认允许（仅限项目根目录且通过敏感文件检查）：
-`git status` `git add` `git commit` `git pull --rebase origin main` `git push origin main` `git remote -v` `git diff` `git log`
