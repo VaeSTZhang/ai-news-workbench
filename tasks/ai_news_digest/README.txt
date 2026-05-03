@@ -1,30 +1,31 @@
 AI News Digest workspace (task-local)
 
-1) Output folders
-- `tasks/ai_news_digest/news_reports/global_ai/`
-- `tasks/ai_news_digest/news_reports/chinese_short_drama/`
+1) Output tracks (must be processed together)
+- `global_ai`
+- `chinese_short_drama`
 
-2) Required output bundle
+2) Required output bundle per track
 - `.docx`
 - `.html`
 - `sources.json`
 - `task_log.txt`
 
-3) Daily vs Monthly boundary
-- Daily: only the previous day.
-- Monthly: only the previous natural month.
-- Do not mix daily and monthly scopes.
+3) Scope boundary
+- Daily: previous day only.
+- Monthly: previous natural month only.
+- Never mix daily and monthly scopes.
 
-4) Daily hard rules
-- Daily main list must contain only previous-day verifiable news.
-- No methodology/process/rules entries in daily main list.
-- If news is insufficient, allow fewer than target counts and explain in task_log.txt.
-- Never fill with old-month items.
+4) Daily reporting rules
+- Daily main list must contain only previous-day verifiable items.
+- No methodology/process/template/safety-rule text as news entries.
+- If daily signals are limited, use a reader-friendly formal explanation block.
+- Do not use internal QA phrases such as “主列表为空/整改版/见task_log”.
 
-5) Monthly hard rules
+5) Monthly reporting rules
 - De-dup is mandatory.
-- If verifiable items are insufficient, record the gap in task_log.txt instead of padding.
+- Same event or same trend cannot be split into padded rewrites.
+- If verifiable coverage is insufficient, record the shortfall in task_log.txt.
 
 6) Source rules
-- Every main-list item must have directly supporting, publicly accessible sources.
-- Source-insufficient items must stay out of main list and be logged in task_log.txt.
+- Every main-list item must have directly supporting publicly accessible sources.
+- Source-insufficient items must stay out of main list and be recorded in task_log.txt.

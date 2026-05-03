@@ -1,9 +1,9 @@
 复制并执行 `tasks/ai_news_digest/templates/daily_ai_news_task_prompt.txt`。
 硬性执行：
-1. 每日 11:00（北京时间）仅总结前一天新闻。
-2. 禁止使用旧月份内容、月报内容、方法论条目凑日报。
-3. 若当日不足目标条数，允许少于目标，但必须在 task_log.txt 说明，不得凑数。
-4. 每条主列表新闻必须有可访问且直接对应的来源。
-5. 输出 `.docx/.html/sources.json/task_log.txt`。
-6. 禁止 `.md` 与图片。
+1. 每日 11:00（北京时间）仅总结前一天。
+2. 必须同时处理 global_ai 与 chinese_short_drama 两个栏目。
+3. 禁止使用旧月份内容、月报内容、方法论条目凑日报。
+4. 若当日新闻不足，允许少于目标，但正文必须是正式读者说明，不得写“主列表为空/整改版/见task_log”。
+5. 每条主列表内容必须有可访问且直接对应的来源。
+6. 输出 `.docx/.html/sources.json/task_log.txt`。
 7. 提交前完成敏感文件检查。

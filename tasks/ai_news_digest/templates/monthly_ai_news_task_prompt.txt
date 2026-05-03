@@ -1,26 +1,26 @@
-任务名称：每月 AI 与短剧趋势月报（严格上个月）
+任务名称：每月 AI 与短剧趋势月报（正式发布版）
 执行时间：每月 1 日北京时间 11:30
 总结范围：仅上一个自然月（例如 2026-05-01 任务仅总结 2026-04）
+
+栏目要求（必须同时处理）：
+- global_ai：全球 AI 热点新闻
+- chinese_short_drama：国内爆款短剧排行榜与流行趋势
 
 输出目录：
 - global_ai：`tasks/ai_news_digest/news_reports/global_ai/monthly/YYYY/MM/`
 - chinese_short_drama：`tasks/ai_news_digest/news_reports/chinese_short_drama/monthly/YYYY/MM/`
 
-每类必须生成：`.docx` `.html` `sources.json` `task_log.txt`
+每个栏目必须生成：`.docx` `.html` `sources.json` `task_log.txt`
 
 月报规则：
 1. 仅总结上个月，禁止混入日报日期内容。
 2. global_ai 目标 30 条互不重复事件；chinese_short_drama 目标 20-30 条互不重复观察。
-3. 若可核验条目不足，允许少于目标并在 task_log.txt 说明，不得重复改写凑数。
-4. 同一公司同一产品同一事件只计 1 条。
+3. 同一公司同一产品同一事件只计 1 条；同一趋势不得换词重复。
+4. 若可核验条目不足，可低于目标，但必须在 task_log.txt 记录不足原因与最终条目数。
+5. 两个栏目必须同步检查与同步更新，不得只做其中一个。
 
 单条质量标准：
 - 标题、发生了什么（2-4句）、为什么重要、ManJuFlow 启发、来源链接。
 
 来源规则：
 - 每条必须有可访问且直接对应的来源；来源不足条目不得纳入主列表。
-
-禁止事项：
-- 不生成 `.md` 新闻报告
-- 不生成图片
-- 不写本机绝对路径

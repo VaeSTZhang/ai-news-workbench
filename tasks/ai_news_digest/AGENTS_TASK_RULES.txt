@@ -3,15 +3,15 @@ AI News Digest task rules (local scope)
 1. Maintain task files only under `tasks/ai_news_digest/`.
 2. Active output root is `tasks/ai_news_digest/news_reports/`.
 3. Current active tracks are only `global_ai` and `chinese_short_drama`.
-4. `ai_film_video` is deprecated and archive-only.
+4. Both tracks must be reviewed and updated together in each remediation.
 5. Do not output markdown reports for this workflow.
 6. Do not include machine-identifying local path data in public artifacts.
 
 Hard quality rules:
 A) Daily scope: previous day only. Monthly scope: previous natural month only.
-B) Daily main list cannot include methodology, collection strategy, rules, templates, or safety notes.
-C) If daily/news volume is insufficient, report lower count in task_log.txt; never backfill with old items.
-D) Monthly de-dup is mandatory; same core event/trend cannot be split into multiple padded entries.
+B) Daily正文禁止方法论、采集规则、模板规则、安全规则类伪新闻。
+C) 信息不足时允许低于目标条数，但必须采用正式读者说明，不得使用内部验收措辞。
+D) Monthly de-dup is mandatory; same core event/trend cannot be split into padded entries.
 E) `sources.json` fields required per record:
    id, category, title, url, publisher, published_date, accessed_date, used_in_section, reliability_note.
 F) Every main-list item must have directly corresponding publicly accessible sources.

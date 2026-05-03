@@ -1,1 +1,5 @@
-[]
+[
+  {"id":"global_ai_daily_2026-05-02_GD01_S01","category":"global_ai","title":"OpenAI News","url":"https://openai.com/news/","publisher":"OpenAI","published_date":"N/A","accessed_date":"2026-05-03","used_in_section":"GD01","reliability_note":"官方新闻页面，用于核验当日是否有重大新增发布"},
+  {"id":"global_ai_daily_2026-05-02_GD01_S02","category":"global_ai","title":"Google AI Blog","url":"https://blog.google/technology/ai/","publisher":"Google","published_date":"N/A","accessed_date":"2026-05-03","used_in_section":"GD01","reliability_note":"官方博客页面，用于核验当日是否有重大新增发布"},
+  {"id":"global_ai_daily_2026-05-02_GD01_S03","category":"global_ai","title":"Reuters Technology","url":"https://www.reuters.com/technology/","publisher":"Reuters","published_date":"N/A","accessed_date":"2026-05-03","used_in_section":"GD01","reliability_note":"主流媒体频道页，用于核验当日重大报道"}
+]
