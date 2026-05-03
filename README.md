@@ -2,28 +2,30 @@
 
 Codex-powered intelligence workbench for global AI news and China short-drama trend reports.
 
-## 报告栏目
+## Current Tracks
 
-- `global_ai`：全球 AI 热点新闻
-- `chinese_short_drama`：国内爆款短剧排行榜与流行趋势
+- `global_ai`: global AI headline intelligence
+- `chinese_short_drama`: China short-drama ranking and trend intelligence
 
-## 输出格式
+## Outputs
 
+Each run produces:
 - `.docx`
 - `.html`
 - `sources.json`
 - `task_log.txt`
 
-## 硬性质量标准
+## Quality Baseline
 
-- `global_ai` 日报：不少于 10 条，新闻密集日 10-15 条
-- `global_ai` 月报：30 条互不重复的重要全球 AI 事件
-- `chinese_short_drama` 日报：不少于 8 条有效观察
-- `chinese_short_drama` 月报：20-30 条互不重复的重要市场观察
+- `global_ai` daily: at least 10 items
+- `global_ai` monthly: 30 non-duplicate key events
+- `chinese_short_drama` daily: at least 8 valid observations
+- `chinese_short_drama` monthly: 20-30 non-duplicate market observations
 
-每条必须写清：谁、何时、做了什么、结果、为什么重要、对 ManJuFlow 的启发、来源链接。
+Each item must include: title, what happened, why it matters, implications for ManJuFlow, and source links.
 
-## 公开提交原则
+## Security Principles
 
-`tasks/ai_news_digest/news_reports/` 是公开仓库核心内容，可提交。
-禁止提交敏感文件、公司文件、个人隐私、本地配置与旧混乱中间产物。
+- Operate only inside the project root.
+- Do not read, copy, or commit files outside this repository.
+- Never commit secrets or unauthorized materials, including API keys, tokens, cookies, passwords, SSH keys, environment files, local configs, internal company projects, private repositories, or personal data.
