@@ -1,11 +1,18 @@
 AI 新闻任务局部规则（AI 新闻自动化专属）
 
-1. 仅在 `tasks/ai_news_digest/` 内创建和维护任务文件。
-2. 自动任务输出必须进入 `tasks/ai_news_digest/news_reports/`。
-3. 自动任务 prompt 必须放在 `tasks/ai_news_digest/templates/`。
-4. 日志必须写入 `tasks/ai_news_digest/logs_txt/`。
-5. 旧输出归档必须放入 `tasks/ai_news_digest/archive_old_outputs/`。
+1. 只在 `tasks/ai_news_digest/` 内维护任务文件。
+2. 输出必须进入 `tasks/ai_news_digest/news_reports/`。
+3. 模板必须放在 `tasks/ai_news_digest/templates/`。
+4. 日志写入 `tasks/ai_news_digest/logs_txt/`。
+5. 旧输出归档到 `tasks/ai_news_digest/archive_old_outputs/`。
 6. 禁止生成 `.md` 新闻报告。
 7. 禁止生成图片。
-8. 严禁访问项目目录外路径。
-9. 公开文件中禁止出现本机绝对路径、用户名或设备目录信息。
+8. 严禁访问项目外路径。
+9. 公开文档禁止本机绝对路径、用户名、设备目录信息。
+
+内容强约束：
+- global_ai daily：>=10 条（可到 15 条）
+- global_ai monthly：最重要 30 条
+- chinese_short_drama daily：>=8 条
+- chinese_short_drama monthly：20-30 条
+- 每条必须有来源；不得编造。

@@ -3,48 +3,80 @@
     "title": "AP",
     "url": "https://apnews.com/article/060cecf836c4cebcf012a3ceb5333f2c",
     "publisher": "AP",
-    "published_date": "2026-05-01",
+    "published_date": "高",
     "accessed_date": "2026-05-03",
-    "reliability_note": "公开来源核对；部分为延续观察"
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
   },
   {
-    "title": "TechCrunch",
-    "url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
-    "publisher": "TechCrunch",
-    "published_date": "2026-05-01",
+    "title": "Reuters",
+    "url": "https://www.investing.com/news/stock-market-news/microsoft-to-end-exclusive-license-for-openais-technology-4638956",
+    "publisher": "Reuters",
+    "published_date": "高",
     "accessed_date": "2026-05-03",
-    "reliability_note": "公开来源核对；部分为延续观察"
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
   },
   {
-    "title": "OpenAI Deployment Safety",
+    "title": "Reuters",
+    "url": "https://www.investing.com/news/stock-market-news/google-puts-ai-agents-at-heart-of-its-enterprise-moneymaking-push-4629077",
+    "publisher": "Reuters",
+    "published_date": "中",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
+  },
+  {
+    "title": "Reuters",
+    "url": "https://www.investing.com/news/stock-market-news/google-cloud-pulls-ahead-as-big-techs-ai-bet-swells-to-700-billion-4648348",
+    "publisher": "Reuters",
+    "published_date": "中",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
+  },
+  {
+    "title": "Reuters",
+    "url": "https://www.investing.com/news/stock-market-news/factboxfrom-openai-to-nvidia-firms-channel-billions-into-ai-infrastructure-as-demand-booms-4626232",
+    "publisher": "Reuters",
+    "published_date": "中",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
+  },
+  {
+    "title": "Reuters",
+    "url": "https://www.investing.com/news/stock-market-news/vance-bessent-questioned-tech-giants-on-ai-security-before-anthropics-mythos-release-cnbc-reports-4608619",
+    "publisher": "Reuters",
+    "published_date": "中",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
+  },
+  {
+    "title": "OpenAI",
     "url": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf",
-    "publisher": "OpenAI Deployment Safety",
-    "published_date": "2026-04-23",
+    "publisher": "OpenAI",
+    "published_date": "中",
     "accessed_date": "2026-05-03",
-    "reliability_note": "公开来源核对；部分为延续观察"
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
   },
   {
-    "title": "OpenAI Deployment Safety",
+    "title": "OpenAI",
     "url": "https://deploymentsafety.openai.com/chatgpt-images-2-0/chatgpt-images-2-0.pdf",
-    "publisher": "OpenAI Deployment Safety",
-    "published_date": "2026-04-21",
+    "publisher": "OpenAI",
+    "published_date": "中",
     "accessed_date": "2026-05-03",
-    "reliability_note": "公开来源核对；部分为延续观察"
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
   },
   {
-    "title": "Anthropic System Cards",
+    "title": "Anthropic",
     "url": "https://www.anthropic.com/system-cards",
-    "publisher": "Anthropic System Cards",
-    "published_date": "2026-04",
+    "publisher": "Anthropic",
+    "published_date": "中",
     "accessed_date": "2026-05-03",
-    "reliability_note": "公开来源核对；部分为延续观察"
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
   },
   {
-    "title": "Meta Newsroom",
+    "title": "Meta",
     "url": "https://about.fb.com/news/2026/04/can-europe-seize-the-ai-moment/",
-    "publisher": "Meta Newsroom",
-    "published_date": "2026-04-07",
+    "publisher": "Meta",
+    "published_date": "中",
     "accessed_date": "2026-05-03",
-    "reliability_note": "公开来源核对；部分为延续观察"
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
   }
 ]

@@ -54,3 +54,6 @@ logs_txt/
 tasks/ai_news_digest/archive_old_outputs/
 tasks/ai_news_digest/archive_old_md/
 tasks/ai_news_digest/removed_2026_05_outputs/
+
+# 保持公开报告可跟踪（不要忽略 news_reports 及其 .docx/.html/.json/.txt）
+!tasks/ai_news_digest/news_reports/

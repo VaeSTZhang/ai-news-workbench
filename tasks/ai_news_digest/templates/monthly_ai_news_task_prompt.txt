@@ -1,45 +1,33 @@
-任务名称：
-每月 AI 与短剧趋势月报
+任务名称：每月 AI 与短剧趋势月报
 
-任务时间：
-每月 1 日北京时间 11:30 执行。
+执行时间：每月 1 日北京时间 11:30。
+总结范围：上一个自然月。
 
-任务内容：
-总结上一个自然月的公开信息。
-
-输出目录规则：
-1) global_ai：
+输出目录：
+1) global_ai
 `tasks/ai_news_digest/news_reports/global_ai/monthly/YYYY/MM/`
-- `YYYY-MM_global_ai_monthly.docx`
-- `YYYY-MM_global_ai_monthly.html`
-- `sources.json`
-- `task_log.txt`
-
-2) chinese_short_drama：
+2) chinese_short_drama
 `tasks/ai_news_digest/news_reports/chinese_short_drama/monthly/YYYY/MM/`
-- `YYYY-MM_chinese_short_drama_monthly.docx`
-- `YYYY-MM_chinese_short_drama_monthly.html`
+
+每类必须生成四件套：
+- `.docx`
+- `.html`
 - `sources.json`
 - `task_log.txt`
 
-完整性约束（强制）：
-- 每个目录必须同时产出四件套：`.docx/.html/sources.json/task_log.txt`
-- `global_ai` 与 `chinese_short_drama` 不得复用同一主体事件
-- 如来源不足，必须明确“公开来源有限”并写检索范围
+强制条数标准：
+- global_ai：当月最重要 30 条全球 AI 事件
+- chinese_short_drama：20-30 条重要短剧市场观察
 
-短剧月报必含：
-1. 平台榜单与爆款概览
-2. 热门题材趋势
-3. 热门人设趋势
-4. 高频剧情钩子
-5. 平台内容偏好
-6. 商业化/投流/免费短剧趋势
-7. 对 ManJuFlow 的启发
-8. 下月追踪方向
-9. 来源链接
+短剧月报覆盖项：
+- 平台榜单与爆款概览
+- 热门题材、人设、剧情钩子
+- 平台偏好、商业化与投流观察
+- 对 ManJuFlow 的启发与下月追踪方向
 
-信息质量：
-1. 联网核对并给出来源。
-2. 不得编造或夸大。
-3. 未确认信息标注“待核实”。
-4. 仅写项目相对路径，不写本机绝对路径。
+质量规则：
+1. 每条必须有来源链接。
+2. 不生成 `.md` 新闻报告。
+3. 不生成图片。
+4. 不写本机绝对路径。
+5. 生成后检查 monthly 目录不为空且条数达标。

@@ -1,61 +1,32 @@
-任务名称：
-每日 AI 与短剧趋势速览
+任务名称：每日 AI 与短剧趋势速览
 
-任务时间：
-每天北京时间 11:00 执行。
+执行时间：每天北京时间 11:00。
+总结范围：前一天。
 
-任务内容：
-总结前一天的公开信息，不总结当天新闻。
-
-被总结日期：
-任务执行日前一天。
-
-输出约束：
-- 仅输出到 `tasks/ai_news_digest/news_reports/`
-- 仅允许 `.docx/.html/sources.json/task_log.txt`
-- 禁止生成 Markdown 新闻报告
-- 禁止生成图片
-
-输出目录规则：
-1) global_ai：
+输出目录：
+1) global_ai
 `tasks/ai_news_digest/news_reports/global_ai/daily/YYYY-MM/YYYY-MM-DD/`
-- `YYYY-MM-DD_global_ai_daily.docx`
-- `YYYY-MM-DD_global_ai_daily.html`
-- `sources.json`
-- `task_log.txt`
-
-2) chinese_short_drama：
+2) chinese_short_drama
 `tasks/ai_news_digest/news_reports/chinese_short_drama/daily/YYYY-MM/YYYY-MM-DD/`
-- `YYYY-MM-DD_chinese_short_drama_daily.docx`
-- `YYYY-MM-DD_chinese_short_drama_daily.html`
+
+每类必须生成四件套：
+- `.docx`
+- `.html`
 - `sources.json`
 - `task_log.txt`
 
-数量下限（强制）：
-- `global_ai`：5-10 条高质量事件
-- `chinese_short_drama`：5-10 条趋势观察
-- 短剧方向若榜单公开来源有限，仍需覆盖：
-  1. 榜单变化或平台热剧观察
-  2. 热门题材变化
-  3. 热门人设变化
-  4. 剧情套路/钩子趋势
-  5. 对 ManJuFlow 的启发
-- 禁止输出仅 1 条的短剧日报
+强制条数标准：
+- global_ai：不少于 10 条，重大新闻密集日可写 10-15 条
+- chinese_short_drama：目标不少于 8 条有效内容
 
-领域边界：
-- `global_ai`：模型、Agent、基础设施、政策监管、产业化、安全治理
-- `chinese_short_drama`：国内短剧榜单与流行趋势，不写与国内短剧趋势无关的泛影视 AI 新闻
+短剧方向补充规则：
+- 若公开榜单不足，可补“趋势观察/延续观察/平台内容动向”
+- 必须明确标注“趋势观察”或“延续观察”
+- 不得胡编具体排名、热度值、播放量
 
-信息质量：
-1. 必须联网核对并给来源链接。
-2. 不得编造新闻、数据、排名、播放量。
-3. 未确认信息标注“待核实”。
-4. 日志与公开文档仅写项目相对路径。
-
-task_log.txt 必填：
-1. 执行时间
-2. 被总结日期
-3. 生成文件路径（相对路径）
-4. 条数统计与去重结果
-5. 未核实信息标记
-6. 安全边界执行情况
+质量规则：
+1. 每条必须有来源链接。
+2. 不生成 `.md` 新闻报告。
+3. 不生成图片。
+4. 不写本机绝对路径。
+5. 生成后检查 daily 目录不为空且条数达标。

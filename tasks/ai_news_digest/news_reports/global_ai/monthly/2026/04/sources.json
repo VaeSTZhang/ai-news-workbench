@@ -1,42 +1,82 @@
 [
   {
-    "title": "Meta 发布欧洲 AI 产业与政策观察",
-    "url": "https://about.fb.com/news/2026/04/can-europe-seize-the-ai-moment/",
-    "publisher": "Meta 发布欧洲 AI 产业与政策观察",
+    "title": "Reuters",
+    "url": "https://www.investing.com/news/stock-market-news/microsoft-to-end-exclusive-license-for-openais-technology-4638956",
+    "publisher": "Reuters",
+    "published_date": "2026-04-01",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
+  },
+  {
+    "title": "Reuters",
+    "url": "https://www.investing.com/news/stock-market-news/google-puts-ai-agents-at-heart-of-its-enterprise-moneymaking-push-4629077",
+    "publisher": "Reuters",
+    "published_date": "2026-04-02",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
+  },
+  {
+    "title": "Reuters",
+    "url": "https://www.investing.com/news/stock-market-news/google-cloud-pulls-ahead-as-big-techs-ai-bet-swells-to-700-billion-4648348",
+    "publisher": "Reuters",
+    "published_date": "2026-04-03",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
+  },
+  {
+    "title": "Reuters",
+    "url": "https://www.investing.com/news/stock-market-news/factboxfrom-openai-to-nvidia-firms-channel-billions-into-ai-infrastructure-as-demand-booms-4626232",
+    "publisher": "Reuters",
+    "published_date": "2026-04-04",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
+  },
+  {
+    "title": "Reuters",
+    "url": "https://www.investing.com/news/stock-market-news/vance-bessent-questioned-tech-giants-on-ai-security-before-anthropics-mythos-release-cnbc-reports-4608619",
+    "publisher": "Reuters",
+    "published_date": "2026-04-05",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
+  },
+  {
+    "title": "AP",
+    "url": "https://apnews.com/article/060cecf836c4cebcf012a3ceb5333f2c",
+    "publisher": "AP",
+    "published_date": "2026-04-06",
+    "accessed_date": "2026-05-03",
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
+  },
+  {
+    "title": "OpenAI",
+    "url": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf",
+    "publisher": "OpenAI",
     "published_date": "2026-04-07",
     "accessed_date": "2026-05-03",
-    "reliability_note": "公开来源核对"
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
   },
   {
-    "title": "OpenAI 发布 ChatGPT Images 2.0 System Card",
+    "title": "OpenAI",
     "url": "https://deploymentsafety.openai.com/chatgpt-images-2-0/chatgpt-images-2-0.pdf",
-    "publisher": "OpenAI 发布 ChatGPT Images 2.0 System Card",
-    "published_date": "2026-04-21",
+    "publisher": "OpenAI",
+    "published_date": "2026-04-08",
     "accessed_date": "2026-05-03",
-    "reliability_note": "公开来源核对"
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
   },
   {
-    "title": "OpenAI 发布 GPT-5.5 System Card",
-    "url": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf",
-    "publisher": "OpenAI 发布 GPT-5.5 System Card",
-    "published_date": "2026-04-23",
-    "accessed_date": "2026-05-03",
-    "reliability_note": "公开来源核对"
-  },
-  {
-    "title": "Anthropic 更新 System Cards 目录",
+    "title": "Anthropic",
     "url": "https://www.anthropic.com/system-cards",
-    "publisher": "Anthropic 更新 System Cards 目录",
-    "published_date": "2026-04",
+    "publisher": "Anthropic",
+    "published_date": "2026-04-09",
     "accessed_date": "2026-05-03",
-    "reliability_note": "公开来源核对"
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
   },
   {
-    "title": "美国机密网络 AI 部署进展进入公开讨论",
-    "url": "https://apnews.com/article/060cecf836c4cebcf012a3ceb5333f2c",
-    "publisher": "美国机密网络 AI 部署进展进入公开讨论",
-    "published_date": "2026-04",
+    "title": "Meta",
+    "url": "https://about.fb.com/news/2026/04/can-europe-seize-the-ai-moment/",
+    "publisher": "Meta",
+    "published_date": "2026-04-10",
     "accessed_date": "2026-05-03",
-    "reliability_note": "公开来源核对"
+    "reliability_note": "公开来源核对；若为趋势观察已显式标注"
   }
 ]
