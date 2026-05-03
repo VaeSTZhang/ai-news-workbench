@@ -33,12 +33,24 @@ venv/
 # Codex 与敏感配置
 .codex/
 
-# 旧产物归档（如无价值长期保留项）
+# 私有/本地排除
+private_excluded/
+
+# 公开仓库不应上传的旧产物
 archive_old_outputs/
 archive_old_md/
+removed_2026_05_outputs/
 
-# 旧项目根下的旧归档（本仓库使用 tasks/ai_news_digest 结构）
-/tasks/ai_news_digest/archive_old_outputs/
+# 根目录散落旧目录（如存在）
+reports/
+reports_docx/
+reports_html/
+sources/
+sources_json/
+logs/
+logs_txt/
 
-# 其他项目内文件
-.DS_Store
+# 任务相关临时/本地产物（任务内部保留）
+tasks/ai_news_digest/archive_old_outputs/
+tasks/ai_news_digest/archive_old_md/
+tasks/ai_news_digest/removed_2026_05_outputs/
