@@ -1,45 +1,45 @@
-# AI News Workbench
+# AI 新闻工作台
 
-Tool-agnostic AI news automation workbench for global AI news and China short-drama trend reports.
+工具无关的 AI 新闻自动化工作台，专注于全球 AI 新闻与中国短剧趋势报告。
 
-This project was initially bootstrapped with Codex Desktop assistance, but is now designed as a tool-agnostic workspace. It can be executed by OpenCode, Codex, other local automation agents, or manual scripts.
+本项目最初由 Codex Desktop 辅助搭建，现设计为工具无关的工作区。可由 OpenCode、Codex、其他本地自动化代理或人工脚本执行。
 
-## Command Entry
+## 命令入口
 
-Trigger the daily update workflow with a single command:
+输入以下命令触发每日新闻更新流程：
 - `更新新闻`
 
-This command runs the fixed daily pipeline for both tracks together and follows:
+该命令执行固定的每日流水线，同时处理两个栏目，遵循：
 - `tasks/ai_news_digest/RUNBOOK_UPDATE_NEWS.txt`
 
-## Current Tracks
+## 当前栏目
 
-- `global_ai`: global AI headline intelligence
-- `chinese_short_drama`: China short-drama ranking and trend intelligence
+- `global_ai`：全球 AI 热点头条情报
+- `chinese_short_drama`：国内爆款短剧排行榜与流行趋势情报
 
-## Outputs
+## 输出文件
 
-Each track run produces:
-- `.docx`
-- `.html`
-- `sources.json`
-- `task_log.txt`
+每次运行生成：
+- `.docx` - 可下载的 Word 格式报告
+- `.html` - 可直接在浏览器中打开的完整报告
+- `sources.json` - 结构化来源记录
+- `task_log.txt` - 执行日志
 
-## Quality Baseline
+## 质量基准
 
-- Daily scope: previous day only
-- Monthly scope: previous natural month only
-- `global_ai` daily target: 10-15
-- `chinese_short_drama` daily target: >=8
-- If verifiable signals are insufficient, keep fewer items and explain in `task_log.txt` without padding
+- 日报范围：仅前一天
+- 月报范围：仅上一个自然月
+- `global_ai` 日报目标：10-15 条
+- `chinese_short_drama` 日报目标：≥8 条
+- 如果公开可核验信息不足，允许少于目标条数，但必须在 `task_log.txt` 中说明原因
 
-## Security Principles
+## 安全原则
 
-- Operate only inside the project root.
-- Do not read, copy, or commit files outside this repository.
-- Never commit secrets or unauthorized materials, including API keys, tokens, cookies, passwords, SSH keys, environment files, local configs, internal company projects, private repositories, or personal data.
+- 仅在项目根目录内操作
+- 不读取、复制或提交此仓库外的文件
+- 不提交密钥或未授权资料，包括 API Key、token、cookie、密码、SSH key、环境文件、本地配置、公司项目、私有仓库或个人数据
 
-## Current Reviewable Examples / 当前可审阅样例
+## 当前可审阅样例
 
 当前公开仓库中可审阅的正式报告样例：
 
