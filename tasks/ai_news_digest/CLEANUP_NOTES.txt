@@ -65,3 +65,10 @@ AI 新闻任务目录清理说明（2026-05-04）
 - 处理原则：信息不足时宁可少报或不提交，不把方法论、监测说明、采集策略伪装成新闻条目
 - 归档目录：tasks/ai_news_digest/archive_old_outputs/deprecated_2026-05-03_daily/
 - 说明：archive_old_outputs 不提交到 GitHub
+
+10. 第四阶段：2026-05-02 已提交低质量日报归档（2026-05-04）
+- 操作：将已提交过的 2026-05-02 global_ai 与 chinese_short_drama 日报从正式 news_reports 目录移入本地归档
+- 原因：两份日报均只有 1 条"监测结果说明"，不是真实新闻条目；来源为频道页/首页，不能直接支撑正文；违反第三阶段加固后的报告质量规则
+- 处理原则：公开仓库正式报告目录只保留可核验、可阅读、可分享的报告；低质量试运行产物归档到本地忽略目录，不继续保留在正式 reports 路径
+- 归档目录：tasks/ai_news_digest/archive_old_outputs/deprecated_2026-05-02_daily/
+- 说明：archive_old_outputs 不提交到 GitHub
