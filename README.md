@@ -2,6 +2,14 @@
 
 Codex-powered intelligence workbench for global AI news and China short-drama trend reports.
 
+## Command Entry
+
+In Codex Desktop, you can trigger the daily update workflow with a single command:
+- `更新新闻`
+
+This command runs the fixed daily pipeline for both tracks together and follows:
+- `tasks/ai_news_digest/RUNBOOK_UPDATE_NEWS.txt`
+
 ## Current Tracks
 
 - `global_ai`: global AI headline intelligence
@@ -9,7 +17,7 @@ Codex-powered intelligence workbench for global AI news and China short-drama tr
 
 ## Outputs
 
-Each run produces:
+Each track run produces:
 - `.docx`
 - `.html`
 - `sources.json`
@@ -17,12 +25,11 @@ Each run produces:
 
 ## Quality Baseline
 
-- `global_ai` daily: at least 10 items
-- `global_ai` monthly: 30 non-duplicate key events
-- `chinese_short_drama` daily: at least 8 valid observations
-- `chinese_short_drama` monthly: 20-30 non-duplicate market observations
-
-Each item must include: title, what happened, why it matters, implications for ManJuFlow, and source links.
+- Daily scope: previous day only
+- Monthly scope: previous natural month only
+- `global_ai` daily target: 10-15
+- `chinese_short_drama` daily target: >=8
+- If verifiable signals are insufficient, keep fewer items and explain in `task_log.txt` without padding
 
 ## Security Principles
 

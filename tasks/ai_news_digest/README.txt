@@ -1,31 +1,36 @@
 AI News Digest workspace (task-local)
 
-1) Output tracks (must be processed together)
+1) Command entry
+- In Codex Desktop, input: `更新新闻`
+- Command file: `tasks/ai_news_digest/templates/COMMAND_UPDATE_NEWS.txt`
+- Runbook: `tasks/ai_news_digest/RUNBOOK_UPDATE_NEWS.txt`
+
+2) Output tracks (must be processed together)
 - `global_ai`
 - `chinese_short_drama`
 
-2) Required output bundle per track
+3) Required output bundle per track
 - `.docx`
 - `.html`
 - `sources.json`
 - `task_log.txt`
 
-3) Scope boundary
+4) Scope boundary
 - Daily: previous day only.
 - Monthly: previous natural month only.
 - Never mix daily and monthly scopes.
 
-4) Daily reporting rules
+5) Daily reporting rules
 - Daily main list must contain only previous-day verifiable items.
 - No methodology/process/template/safety-rule text as news entries.
-- If daily signals are limited, use a reader-friendly formal explanation block.
+- If daily signals are limited, use reader-friendly formal explanation in report body.
 - Do not use internal QA phrases such as “主列表为空/整改版/见task_log”.
 
-5) Monthly reporting rules
+6) Monthly reporting rules
 - De-dup is mandatory.
 - Same event or same trend cannot be split into padded rewrites.
 - If verifiable coverage is insufficient, record the shortfall in task_log.txt.
 
-6) Source rules
+7) Source rules
 - Every main-list item must have directly supporting publicly accessible sources.
 - Source-insufficient items must stay out of main list and be recorded in task_log.txt.

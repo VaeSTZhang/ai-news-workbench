@@ -4,8 +4,9 @@ AI News Digest task rules (local scope)
 2. Active output root is `tasks/ai_news_digest/news_reports/`.
 3. Current active tracks are only `global_ai` and `chinese_short_drama`.
 4. Both tracks must be reviewed and updated together in each remediation.
-5. Do not output markdown reports for this workflow.
-6. Do not include machine-identifying local path data in public artifacts.
+5. Daily command entry is `更新新闻` and must follow `RUNBOOK_UPDATE_NEWS.txt`.
+6. Do not output markdown reports for this workflow.
+7. Do not include machine-identifying local path data in public artifacts.
 
 Hard quality rules:
 A) Daily scope: previous day only. Monthly scope: previous natural month only.

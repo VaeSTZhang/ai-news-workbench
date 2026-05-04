@@ -21,8 +21,9 @@ Current active report tracks:
 - `global_ai`
 - `chinese_short_drama`
 
-Deprecated track:
-- `ai_film_video` (archive only; not an active output target)
+Daily command entry in Codex Desktop:
+- `更新新闻`
+- Runbook: `tasks/ai_news_digest/RUNBOOK_UPDATE_NEWS.txt`
 
 ## 4) Public-Repo Security Requirements
 
@@ -36,6 +37,6 @@ Public files must never include:
 ## 5) Report Quality Baseline
 
 - No fabricated news, data, links, or quotes.
-- If reliable public evidence is insufficient, explicitly state:
-  - `公开可核验信息不足，未纳入主列表`.
+- Daily reports must stay within previous-day scope.
+- Monthly reports must stay within previous-month scope.
 - Enforce de-duplication in monthly reports and record results in `task_log.txt`.

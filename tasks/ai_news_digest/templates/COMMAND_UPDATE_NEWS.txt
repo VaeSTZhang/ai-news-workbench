@@ -1,0 +1,14 @@
+命令：更新新闻
+用途：触发每日新闻更新流程（Codex 桌面端固定命令）
+
+执行规则：
+1. 自动识别北京时间当前日期，被总结日期=前一天。
+2. 同时更新 global_ai 与 chinese_short_drama 两个栏目。
+3. 仅生成/更新 daily 输出，不执行 monthly。
+4. 输出 daily 四件套：HTML、DOCX、sources.json、task_log.txt。
+5. 仅纳入前一天可核验新闻；禁止旧月份内容、方法论伪新闻与弱来源凑数。
+6. 若当日信息不足，可少于目标条数，但正文必须是正式读者说明，不得使用内部验收话术。
+7. 执行完成后必须做质量检查、安全检查和 Git 提交流程。
+
+引用手册：
+- `tasks/ai_news_digest/RUNBOOK_UPDATE_NEWS.txt`
