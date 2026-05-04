@@ -21,9 +21,11 @@ Current active report tracks:
 - `global_ai`
 - `chinese_short_drama`
 
-Daily command entry in Codex Desktop:
+Daily command entry (tool-agnostic):
 - `更新新闻`
 - Runbook: `tasks/ai_news_digest/RUNBOOK_UPDATE_NEWS.txt`
+
+This project can be executed by OpenCode, Codex, other local automation agents, or manual scripts.
 
 ## 4) Public-Repo Security Requirements
 

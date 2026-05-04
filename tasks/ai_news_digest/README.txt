@@ -1,9 +1,11 @@
 AI News Digest workspace (task-local)
 
 1) Command entry
-- In Codex Desktop, input: `更新新闻`
+- Input: `更新新闻`
 - Command file: `tasks/ai_news_digest/templates/COMMAND_UPDATE_NEWS.txt`
 - Runbook: `tasks/ai_news_digest/RUNBOOK_UPDATE_NEWS.txt`
+
+This project can be executed by OpenCode, Codex, other local automation agents, or manual scripts.
 
 2) Output tracks (must be processed together)
 - `global_ai`

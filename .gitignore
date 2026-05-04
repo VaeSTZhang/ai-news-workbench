@@ -57,3 +57,11 @@ tasks/ai_news_digest/removed_2026_05_outputs/
 
 # 保持公开报告可跟踪（不要忽略 news_reports 及其 .docx/.html/.json/.txt）
 !tasks/ai_news_digest/news_reports/
+
+# MiMo/Codex 本地私有接入文件（不入库）
+*.secret
+*.secrets
+*.token
+*.credentials
+*.local
+mimo_setup_output.txt

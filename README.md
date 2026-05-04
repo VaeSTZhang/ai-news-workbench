@@ -1,10 +1,12 @@
-# Codex AI News Workbench
+# AI News Workbench
 
-Codex-powered intelligence workbench for global AI news and China short-drama trend reports.
+Tool-agnostic AI news automation workbench for global AI news and China short-drama trend reports.
+
+This project was initially bootstrapped with Codex Desktop assistance, but is now designed as a tool-agnostic workspace. It can be executed by OpenCode, Codex, other local automation agents, or manual scripts.
 
 ## Command Entry
 
-In Codex Desktop, you can trigger the daily update workflow with a single command:
+Trigger the daily update workflow with a single command:
 - `更新新闻`
 
 This command runs the fixed daily pipeline for both tracks together and follows:
