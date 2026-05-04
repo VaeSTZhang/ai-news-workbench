@@ -58,3 +58,10 @@ AI 新闻任务目录清理说明（2026-05-04）
 - 已移动包含本机路径的日志文件到 tasks/ai_news_digest/archive_old_outputs/：
   - cleanup_root_log.txt
   - restructure_news_reports_log.txt
+
+9. 第二阶段：2026-05-03 低质量日报归档（2026-05-04）
+- 操作：将未跟踪的 2026-05-03 global_ai 与 chinese_short_drama 日报移入本地归档
+- 原因：两份日报均只有 1 条"监测说明"，不是真实新闻条目；来源为频道页/首页，不能直接支撑正文；不符合公开提交质量标准
+- 处理原则：信息不足时宁可少报或不提交，不把方法论、监测说明、采集策略伪装成新闻条目
+- 归档目录：tasks/ai_news_digest/archive_old_outputs/deprecated_2026-05-03_daily/
+- 说明：archive_old_outputs 不提交到 GitHub
