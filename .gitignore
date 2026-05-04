@@ -65,3 +65,6 @@ tasks/ai_news_digest/removed_2026_05_outputs/
 *.credentials
 *.local
 mimo_setup_output.txt
+
+# Local OpenCode desktop config
+opencode.json

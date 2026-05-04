@@ -78,3 +78,9 @@ AI 新闻任务目录清理说明（2026-05-04）
 - 删除原因：.DS_Store 属于系统垃圾文件；两个 logs_txt 历史日志不再参与正式报告生成、审阅或 GitHub 展示
 - 保留原则：README、AGENTS、任务规则、模板文件、正式月报样例、sources.json、task_log.txt 均保留
 - 风险控制：未删除正式 news_reports 月报样例，未删除 archive_old_outputs，未访问项目根目录之外路径
+
+12. 2026-05-03 日报未生成正式报告记录（2026-05-04）
+- 操作：为 global_ai 与 chinese_short_drama 生成 task_log.txt，不生成 HTML/DOCX/sources.json
+- 原因：当前执行环境无法联网采集和核验 2026-05-03 的真实新闻来源
+- 处理原则：不编造新闻，不使用监测说明或泛来源凑数，不恢复已归档的低质量日报
+- 后续：由具备联网检索能力的工具或人工提供具体来源后，再生成正式日报
