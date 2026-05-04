@@ -72,3 +72,9 @@ AI 新闻任务目录清理说明（2026-05-04）
 - 处理原则：公开仓库正式报告目录只保留可核验、可阅读、可分享的报告；低质量试运行产物归档到本地忽略目录，不继续保留在正式 reports 路径
 - 归档目录：tasks/ai_news_digest/archive_old_outputs/deprecated_2026-05-02_daily/
 - 说明：archive_old_outputs 不提交到 GitHub
+
+11. 全仓库无用文件清理（2026-05-04）
+- 操作：删除根目录和 ai_news_digest 目录下的 .DS_Store 系统文件，以及 2 个历史清理日志文件
+- 删除原因：.DS_Store 属于系统垃圾文件；两个 logs_txt 历史日志不再参与正式报告生成、审阅或 GitHub 展示
+- 保留原则：README、AGENTS、任务规则、模板文件、正式月报样例、sources.json、task_log.txt 均保留
+- 风险控制：未删除正式 news_reports 月报样例，未删除 archive_old_outputs，未访问项目根目录之外路径
