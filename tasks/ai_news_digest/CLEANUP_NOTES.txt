@@ -1,0 +1,35 @@
+AI 新闻任务目录清理说明（2026-05-04）
+
+1. 本次清理目标
+- 清理无用本地缓存与空目录。
+- 强化 AI 新闻任务目录统一性，确保任务资产集中在 `tasks/ai_news_digest/`。
+- 保持公开仓库结构简洁、可维护、可审阅。
+
+2. 已删除文件类型
+- 系统缓存文件：`.DS_Store`（仓库内全部清理）。
+- 空目录：`news_reports/global_ai/monthly/2026/05`（无内容目录）。
+
+3. 已迁移/归档状态
+- 旧 `ai_film_video` 内容仅保留在 `archive_old_outputs/deprecated_ai_film_video/` 作为历史归档，不再作为当前输出栏目。
+- 当前有效栏目仅为 `global_ai` 与 `chinese_short_drama`。
+
+4. 当前有效目录结构
+- `tasks/ai_news_digest/README.txt`
+- `tasks/ai_news_digest/AGENTS_TASK_RULES.txt`
+- `tasks/ai_news_digest/RUNBOOK_UPDATE_NEWS.txt`
+- `tasks/ai_news_digest/templates/`
+- `tasks/ai_news_digest/news_reports/global_ai/daily/`
+- `tasks/ai_news_digest/news_reports/global_ai/monthly/`
+- `tasks/ai_news_digest/news_reports/chinese_short_drama/daily/`
+- `tasks/ai_news_digest/news_reports/chinese_short_drama/monthly/`
+- `tasks/ai_news_digest/logs_txt/`
+- `tasks/ai_news_digest/archive_old_outputs/`
+
+5. 保留但待确认
+- `tasks/ai_news_digest/logs_txt/` 下历史整理日志暂保留，作为过程追溯依据；后续可按保留周期再评估。
+- `tasks/ai_news_digest/archive_old_outputs/` 下历史归档暂保留且继续忽略提交。
+
+6. 安全检查结果
+- 未访问项目根目录之外路径。
+- 清理说明未包含本机用户名、绝对路径或敏感字段。
+- 本次仅处理项目内缓存与结构整理，不涉及外部文件。

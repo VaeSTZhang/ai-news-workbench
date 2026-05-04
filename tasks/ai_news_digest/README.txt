@@ -34,3 +34,14 @@ AI News Digest workspace (task-local)
 7) Source rules
 - Every main-list item must have directly supporting publicly accessible sources.
 - Source-insufficient items must stay out of main list and be recorded in task_log.txt.
+
+
+8) Target structure
+- tasks/ai_news_digest/README.txt
+- tasks/ai_news_digest/AGENTS_TASK_RULES.txt
+- tasks/ai_news_digest/RUNBOOK_UPDATE_NEWS.txt
+- tasks/ai_news_digest/templates/
+- tasks/ai_news_digest/news_reports/global_ai/{daily,monthly}/
+- tasks/ai_news_digest/news_reports/chinese_short_drama/{daily,monthly}/
+- tasks/ai_news_digest/logs_txt/
+- tasks/ai_news_digest/archive_old_outputs/
