@@ -1,5 +1,6 @@
 任务名称：每月 AI 与短剧趋势月报（正式发布版）
 总结范围：仅上一个自然月（例如 2026-05-01 任务仅总结 2026-04）
+样式规范：必须遵循 `tasks/ai_news_digest/templates/HTML_STYLE_GUIDE.txt`
 
 栏目要求（必须同时处理）：
 - global_ai：全球 AI 热点新闻

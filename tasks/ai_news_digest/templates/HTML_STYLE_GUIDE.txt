@@ -1,0 +1,42 @@
+AI News Digest HTML Style Guide (single-file inline CSS only)
+
+1) Technical constraints
+- Use a single HTML file with inline CSS.
+- Do not use external CSS, JS, fonts, images, icon libraries, or CDN resources.
+- Keep structure semantic and readable on desktop/mobile.
+
+2) Required page sections
+- Hero: report title, summarized date, track name, update date, report type.
+- Summary: one-line summary, included item count, source count, quality status.
+- Scope: short note clarifying this page includes only the current track content.
+- News cards: one card per item.
+- Footer: generated-by statement + public verifiable source statement.
+
+3) Card field order (mandatory)
+- 标题
+- 日期 / 平台 / 公司
+- 发生了什么
+- 为什么重要
+- 对 ManJuFlow 的启发
+- 来源链接
+
+4) Visual direction
+- Neutral light background + centered container + paper cards.
+- Subtle border, radius, shadow, spacing.
+- Clear label hierarchy and readable line length.
+- Source links visible at card bottom; do not move all sources to page end.
+
+5) Theme distinction by track
+- global_ai: restrained tech-blue accent.
+- chinese_short_drama: restrained warm-content accent.
+- Keep color contrast accessible and avoid over-design.
+
+6) Low-signal day presentation
+- Use a formal “monitoring note” card in same card style.
+- Do not write internal QA wording such as “主列表为空/整改版/见task_log/已剔除”.
+
+7) Quality rules remain mandatory
+- Daily: previous day only.
+- Monthly: previous natural month only.
+- No methodology/rules text as fake news entries.
+- Each item must have directly supporting, publicly accessible sources.
