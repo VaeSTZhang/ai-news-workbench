@@ -47,3 +47,19 @@ This project can be executed by OpenCode, Codex, other local automation agents, 
 - tasks/ai_news_digest/news_reports/chinese_short_drama/{daily,monthly}/
 - tasks/ai_news_digest/logs_txt/
 - tasks/ai_news_digest/archive_old_outputs/
+
+9) Current tracks and deprecated tracks
+- 当前正式栏目只有 global_ai 和 chinese_short_drama
+- 旧 ai_film_video 已废弃并归档到 archive_old_outputs/deprecated_ai_film_video/
+- archive_old_outputs 为本地忽略归档，不提交到 GitHub
+
+10) Quality control
+- 正式 reports 目录只保留质量达标报告
+- 信息不足时不生成伪新闻卡片
+- 0 条真实可核验内容时只生成 task_log.txt，不生成正式 HTML/DOCX
+- 低质量试运行产物移入 archive_old_outputs 并记录 CLEANUP_NOTES.txt
+
+11) Current reviewable examples / 当前可审阅样例
+- 2026-04 global_ai 月报：tasks/ai_news_digest/news_reports/global_ai/monthly/2026/04/
+- 2026-04 chinese_short_drama 月报：tasks/ai_news_digest/news_reports/chinese_short_drama/monthly/2026/04/
+- 每个样例包含：HTML、DOCX、sources.json、task_log.txt

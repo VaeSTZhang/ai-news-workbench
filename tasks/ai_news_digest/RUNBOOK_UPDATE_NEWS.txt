@@ -108,10 +108,16 @@
 - 是否存在方法论伪新闻
 - 来源是否可访问且对应正文
 
-2) 安全检查
+2) 样例报告与验收
+- 生成报告后必须检查 HTML/DOCX/sources.json/task_log.txt
+- 质量不达标的日报不得进入正式 news_reports
+- 低质量试运行产物移入 archive_old_outputs 并记录 CLEANUP_NOTES
+- 提交前必须做敏感信息检查和 git diff 检查
+
+3) 安全检查
 - 公开文件不得包含：本机用户名、绝对路径、Desktop、Documents、Downloads、.ssh、.codex、.config、.env、API Key、token、cookie、password。
 
-3) Git 检查与提交
+4) Git 检查与提交
 - `git status`
 - `git diff --stat`
 - `git diff`
