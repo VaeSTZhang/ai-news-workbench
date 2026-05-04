@@ -32,11 +32,26 @@ AI News Digest HTML Style Guide (single-file inline CSS only)
 - Keep color contrast accessible and avoid over-design.
 
 6) Low-signal day presentation
-- Use a formal “monitoring note” card in same card style.
-- Do not write internal QA wording such as “主列表为空/整改版/见task_log/已剔除”.
+- Do NOT create "monitoring note" cards or fake news entries.
+- If verifiable news is insufficient, the summary section should state this in natural language.
+- The main news list should only contain real, verifiable news items.
+- Do not write internal QA wording such as "主列表为空/整改版/见task_log/已剔除".
 
-7) Quality rules remain mandatory
+7) Prohibited content in news cards
+- 禁止伪新闻条目：监测说明、方法论、采集策略、来源不足说明、双来源规则、模板规则、自动化说明、长期趋势空话。
+- 禁止伪装话术："今日无重大新闻"、"公开榜单入口有限"、"建议持续关注"、"本期未发现足够新闻"。
+- 禁止泛来源：不允许只用首页、频道页、搜索结果页、平台入口页作为正式来源。
+- 每条新闻卡片必须是独立新闻/观察，必须有直接来源链接。
+
+8) Source requirements
+- Each news card must have specific, verifiable sources at the card bottom.
+- Sources must be article pages, announcement pages, ranking pages, product release pages, regulatory document pages, or verifiable data pages.
+- Homepage, channel pages, search result pages, or platform entry pages are NOT acceptable as primary sources.
+- Comprehensive trend observations require at least 2 directly related sources.
+
+9) Quality rules remain mandatory
 - Daily: previous day only.
 - Monthly: previous natural month only.
 - No methodology/rules text as fake news entries.
 - Each item must have directly supporting, publicly accessible sources.
+- If 0 real verifiable items exist, do not generate formal HTML/DOCX reports; only generate task_log.txt.
